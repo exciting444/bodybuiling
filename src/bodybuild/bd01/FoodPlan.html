@@ -7,16 +7,71 @@
     <link rel="stylesheet" href="menu.css">
     <style>
         #food_top{/*食物背景图区域*/
-            width: 1900px;
+            width: 100%;
             height: 400px;
             margin: 0 auto;
-            background-image: url("https://food.hiyd.com/static/img/food/food-bg.jpg");
+            background: url("https://food.hiyd.com/static/img/food/food-bg.jpg") no-repeat center center;
+
         }
-        #food_top>span{
+        #food_top>span{/*专业全面的食物数据库*/
             display: block;
             font-size: 40px;
             text-align: center;
-            margin-top: 100px;
+            margin:50px 0 70px 0;
+        }
+        .search{
+            width: 100%;
+            height: 45px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        #top_in1{/*搜索框*/
+            width: 590px;
+            height: 45px;
+            line-height: 45px;
+            padding: 0px;
+            border-radius: 5px 0 0 5px;
+            /*margin-left: 600px;*/text-align: center;
+            border: 0;
+            margin-right: 0;
+        }
+        .search_food{
+            width: 110px;
+            height: 45px;
+            margin-left: -2px;
+        }
+        #top_in2{/*搜索按钮*/
+            display: inline-block;
+            width: 110px;
+            height: 45px;
+            background-color: #f33;
+            border: 0;
+
+        }
+        #food>.body_p{
+            width: 100%;
+            height: auto;
+            display: block;
+            overflow: hidden;
+
+        }
+        #food{/*food部分*/
+            width: 1920px;
+            height: 1000px;
+            margin:0 auto;
+            border: 1px solid red;
+        }
+        #food>h2{
+            width: 100%;
+            height: 20px;
+            padding: 0 0 0 9px;
+            margin: 0;
+        }
+        ul{
+            width: 1920px;
+            height: 800px;
+
+
         }
 
 
@@ -57,11 +112,65 @@
         </ul>
     </div>
 </div>
+
 <div id="food_top">
 
+
     <span>专业全面的食物数据库</span>
-    <input type="text"placeholder="搜索食物查询热量">
-    <input type="submit"value="搜索">
+    <div class="search">
+        <input id="top_in1" type="text"placeholder="搜索食物查询热量">
+        <span class="search_food">
+        <input  id="top_in2" type="submit"value="搜索">
+    </span>
+    </div>
+
+</div>
+
+<!--food部分-->
+<div id="food">
+        <h2>常见食物分类</h2>
+
+    <ul>
+        <li>
+            <a href="">
+                <div class="body_p">
+                    <img src="https://cdn.pixabay.com/photo/2015/12/09/17/11/vegetables-1085063__340.jpg" alt="">
+                </div>
+                <h3 class="group_name">蔬菜和水果</h3>
+                <p class="content">苹果、香蕉、黄瓜、番茄</p>
+                <a href=""class="more">更多的...</a>
+            </a>
+            <hr>
+        </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </div>
 </body>
